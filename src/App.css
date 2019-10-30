@@ -20,3 +20,18 @@
 .App-link {
   color: #09d3ac;
 }
+
+.pokemon-card {
+  align-items: center;
+  align-content:space-between;
+  box-sizing: content-box;
+  background: grey;
+  margin-bottom: 20px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  color: black;
+}
