@@ -25,7 +25,7 @@
   align-items: center;
   align-content:space-between;
   box-sizing: content-box;
-  background: grey;
+  background: purple;
   margin-bottom: 20px;
   padding: 20px;
   margin: 20px;
@@ -35,3 +35,15 @@
   border-radius: 10px;
   color: black;
 }
+
+#pokemon-detail {
+  display: inline-block;
+  position: fixed;
+  float: right;
+  width: 50%;
+}
+
+/* #pokemon-list{
+float: left;
+ width: 50%;
+} */

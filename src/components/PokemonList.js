@@ -24,17 +24,19 @@ class PokemonList extends Component{
     return (
 
       <div className="pokemon-card" value={index} key={index}>
-
       {/* <p>{index}</p> */}
-      <button onClick={this.handleClick} value={index}><h3>{pokemon.name}</h3></button>
+      <button onClick={this.handleClick} value={index}>{pokemon.name}</button>
       <img src={pokemon.imageUrl} alt="pokemon"/>
-      
+  
       </div>
     );
   });
 
   return (
+    <div>
     <div>{pokemonCards}</div>
+    <PokemonDetail/>
+    </div>
   )
 
 }

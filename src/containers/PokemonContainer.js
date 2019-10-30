@@ -33,8 +33,12 @@ class PokemonContainer extends Component {
     return(
       <div>
         <h1>Pokemon Cards</h1>
-        <PokemonList pokemons={this.state.pokemonArray} onPokemonSelected={this.handlePokemonSelected}/>
+        <div id="pokemon-detail">
         <PokemonDetail pokemon={this.state.currentPokemon}/>
+        </div>
+        <div id="pokemon-list">
+        <PokemonList pokemons={this.state.pokemonArray} onPokemonSelected={this.handlePokemonSelected}/>
+        </div>
         {/* <ReactPaginate 
               previousLabel={'previous'}
           nextLabel={'next'}
@@ -49,6 +53,7 @@ class PokemonContainer extends Component {
           activeClassName={'active'}
         /> */}
       </div>
+      
     )
   }
 
