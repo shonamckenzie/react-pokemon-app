@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PokemonList from '../components/PokemonList'
 
 class PokemonContainer extends Component {
 
@@ -13,11 +14,15 @@ class PokemonContainer extends Component {
     fetch('https://api.pokemontcg.io/v1/cards')
       .then(res => res.json())
       .then(apidata => this.setState({pokemonArray: apidata.cards}))
+      .catch(err => console.error(err))
   }
 
   render(){
     return(
-      <h1>Pokemon Cards</h1>
+      <div>
+        <h1>Pokemon Cards</h1>
+        <PokemonList pokemon={this.state.pokemonArray}/>
+      </div>
     )
   }
 
